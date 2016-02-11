@@ -15,7 +15,7 @@ class Kf5Kdevelop < Formula
 
   # homebrew's llvm 3.6.2 fails to compile against
   # homebrew's llvm --HEAD is highly unstable, using binary version 3.7 from llvm.org
-  #depends_on "kf5-llvm37-bin"
+  depends_on "kf5-llvm37-bin"
 
   depends_on "gettext" => :build
   depends_on "haraldf/kf5/kf5-kdevplatform"
