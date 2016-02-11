@@ -18,7 +18,7 @@ class Kf5Kdevelop < Formula
   depends_on "kf5-llvm37-bin"
 
   depends_on "gettext" => :build
-  depends_on "haraldf/kf5/kf5-kdevplatform"
+  depends_on "kf5-kdevplatform"
   #depends_on "haraldf/kf5/kf5-kded"
   depends_on "haraldf/kf5/kf5-kglobalaccel"
   depends_on "kf5-kiconthemes"
