@@ -57,7 +57,7 @@ class Kf5Kdevplatform < Formula
     #FIXUP
 
     mkdir "build" do
-        system "cmake", *args, ".."
+        system "PATH=/usr/local/opt/boost/:$PATH cmake", *args, ".."
         #interactive_shell
         system "make", "install"
         prefix.install "install_manifest.txt"
