@@ -26,6 +26,7 @@ class Kf5Kdevplatform < Formula
 
   def install
     args = std_cmake_args
+    args << "-DBOOST_ROOT=/usr/local/opt/boost/"
 
     #system <<-'FIXUP'
 
