@@ -21,7 +21,7 @@ class Kf5Kdevelop < Formula
   depends_on "kf5-kdevplatform"
   #depends_on "haraldf/kf5/kf5-kded"
   depends_on "haraldf/kf5/kf5-kglobalaccel"
-  depends_on "kf5-kiconthemes"
+  depends_on "haraldf/kf5/kf5-kiconthemes"
   depends_on "kf5-breeze-icons"
 
   def patches
