@@ -13,8 +13,8 @@ class Kf5Kdevplatform < Formula
   depends_on "haraldf/kf5/kf5-threadweaver" 
   depends_on "haraldf/kf5/kf5-kcmutils"
 
-  depends_on "haraldf/kf5/kf5-grantlee"
-  depends_on "haraldf/kf5/kf5-libkomparediff2"
+  depends_on "kf5-grantlee"
+  depends_on "kf5-libkomparediff2"
   depends_on "haraldf/kf5/kf5-knotifyconfig"
   depends_on "haraldf/kf5/kf5-knewstuff"
   depends_on "haraldf/kf5/kf5-kitemmodels"
