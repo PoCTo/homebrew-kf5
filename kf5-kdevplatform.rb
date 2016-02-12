@@ -26,7 +26,7 @@ class Kf5Kdevplatform < Formula
 
   def install
     args = std_cmake_args
-    args << "-DBOOST_ROOT=/usr/local/opt/boost/"
+    args << "-DBOOST_ROOT=/usr/local/opt/boost/ -DBoost_NO_SYSTEM_PATHS=ON"
 
     #system <<-'FIXUP'
 
@@ -57,7 +57,7 @@ class Kf5Kdevplatform < Formula
     #FIXUP
 
     mkdir "build" do
-        system "PATH=/usr/local/opt/boost/:$PATH cmake", *args, ".."
+        system "cmake", *args, ".."
         #interactive_shell
         system "make", "install"
         prefix.install "install_manifest.txt"
