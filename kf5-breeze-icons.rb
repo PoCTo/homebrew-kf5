@@ -10,9 +10,9 @@ class Kf5BreezeIcons < Formula
   depends_on "qt5" => "with-d-bus"
   depends_on "gettext"
   
-  def patches
-    DATA
-  end
+  #def patches
+  #  DATA
+  #end
 
   def install
     args = std_cmake_args
