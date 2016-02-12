@@ -3,7 +3,7 @@ require "formula"
 class Kf5Kdevplatform < Formula
   homepage "http://www.kdevelop.org/"
 
-  head "git://anongit.kde.org/kdevplatform.git", :branch => 5.0, :revision => "25e98f4b101b26a570633e82d4863fcb834423b3"
+  head "git://anongit.kde.org/kdevplatform.git", :branch => 5.0#, :revision => "25e98f4b101b26a570633e82d4863fcb834423b3"
   
   depends_on "cmake" => :build
   depends_on "haraldf/kf5/kf5-extra-cmake-modules" => :build
