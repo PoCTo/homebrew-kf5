@@ -10,9 +10,9 @@ class Kf5BreezeIcons < Formula
   depends_on "qt5" => "with-d-bus"
   depends_on "gettext"
   
-  #def patches
-  #  DATA
-  #end
+  def patches
+    DATA
+  end
 
   def install
     args = std_cmake_args
@@ -50,10 +50,8 @@ diff --git a/CMakeLists.txt b/CMakeLists.txt
 index 8435c16..602710b 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -23,7 +23,7 @@ else()
-   add_subdirectory(cursors)
-   add_subdirectory(icons)
-   add_subdirectory(icons-dark)
+@@ -23,7 +23,7 @@ 
+   add_subdirectory(cursors)   
 -  add_subdirectory(kdecoration)
 +#  add_subdirectory(kdecoration)
    add_subdirectory(kstyle)
